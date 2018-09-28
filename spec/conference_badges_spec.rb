@@ -112,8 +112,15 @@ TEXT
     # the badges and room assignments one at a time.
     # To make this test pass, make sure you are iterating through your badges and room assignments lists.
 
-    def printer   
-
+def printer(attendees)
+  batch_badge_creator(attendees).each do |name|
+    puts name
+  end
+  assign_rooms(attendees).each do |counter|
+    puts counter
+  end
+end 
+  
     it 'should puts the list of badges and room_assignments' do
       badges_and_room_assignments.each_line do |line|
         # $stdout is a Ruby global varibale that represents the current standard output.
