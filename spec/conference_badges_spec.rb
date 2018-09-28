@@ -88,8 +88,8 @@ TEXT
     # Question 3
 
     def assign_rooms(attendees)
-      assign_rooms.each do |attendee|
       counter = 1
+      assign_rooms.each do |attendee|
       puts "Hello, #{attendee}. You'll be assigned to room #{counter}!"
         counter += 1
       end
