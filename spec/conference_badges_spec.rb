@@ -70,8 +70,8 @@ TEXT
     # Question 2b
   
     def batch_badge_creator(attendees)
-    batch_badge_creator.each do |badge|
-      puts "Hello, my name is #{badge}."
+    batch_badge_creator.each do |name|
+      puts "Hello, my name is #{name}."
     end 
 
     it 'should return a list of badge messages' do
