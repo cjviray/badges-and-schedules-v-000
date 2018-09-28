@@ -68,7 +68,7 @@ TEXT
   describe '#batch_badge_creator' do
 
     # Question 2b
-    
+  
     def batch_badge_creator(badges)
     batch_badge_creator.each do |badge|
       puts "Hello, my name is #{badge}."
