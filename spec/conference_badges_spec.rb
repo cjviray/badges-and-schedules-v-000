@@ -52,8 +52,12 @@ TEXT
 }
 
   describe '#badge_maker' do
-
+  
     # Question 1
+    
+  def badge_maker(name)
+      puts "Hello, my name is #{name}."
+    end 
 
     it 'should return a formatted badge' do
       expect(badge_maker(name)).to eq("Hello, my name is #{name}.")
@@ -64,6 +68,11 @@ TEXT
   describe '#batch_badge_creator' do
 
     # Question 2b
+    
+    def batch_badge_creator(badges)
+    batch_badge_creator.each do |badge|
+      puts "Hello, my name is #{badge}."
+    end 
 
     it 'should return a list of badge messages' do
       expect(batch_badge_creator(attendees)).to eq(badges)
@@ -77,6 +86,15 @@ TEXT
   describe '#assign_rooms' do
 
     # Question 3
+
+    def assign_rooms(attendees)
+      assign_rooms.each do |attendee|
+      counter = 1
+      puts "Hello, #{attendee}. You'll be assigned to room #{counter}!"
+        counter += 1
+      end
+    end 
+      
 
     it 'should return a list of welcome messages and room assignments' do
       expect(assign_rooms(attendees)).to eq(room_assignments)
@@ -93,6 +111,8 @@ TEXT
     # The method `printer` should output first the results of the batch_badge_creator method and then of the assign_rooms method to the screen - this way you can output
     # the badges and room assignments one at a time.
     # To make this test pass, make sure you are iterating through your badges and room assignments lists.
+
+    def printer   
 
     it 'should puts the list of badges and room_assignments' do
       badges_and_room_assignments.each_line do |line|
