@@ -69,7 +69,7 @@ TEXT
 
     # Question 2b
   
-    def batch_badge_creator(badges)
+    def batch_badge_creator(attendees)
     batch_badge_creator.each do |badge|
       puts "Hello, my name is #{badge}."
     end 
